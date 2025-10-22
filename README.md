@@ -2,7 +2,13 @@
 
 Une expérience web immersive et émotionnelle créée spécialement pour célébrer Ursule OWOLABI.
 
-![Aperçu du site](src/assets/hero-bg.jpg)
+## 🌐 Visualiser le site
+
+[![Voir le site en ligne](src/assets/Capture.PNG)](https://ursulesowolabi-hbd.netlify.app/)
+
+**[🔗 Cliquez ici pour voir le site](https://ursulesowolabi-hbd.netlify.app/)**
+
+> Une expérience interactive pleine d'émotions et de surprises ✨
 
 ## ✨ Fonctionnalités
 
