@@ -1,6 +1,17 @@
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-hero">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background image with overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+        style={{ 
+          backgroundImage: "var(--hero-bg)",
+          backgroundPosition: "center 30%",
+          backgroundSize: "cover"
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-rose-900/50 to-black/70" />
+      
       {/* Floating particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-2 h-2 bg-primary rounded-full animate-float opacity-60 delay-0"></div>
