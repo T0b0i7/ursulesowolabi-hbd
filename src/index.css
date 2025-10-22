@@ -66,29 +66,32 @@ All colors MUST be HSL.
 }
 
 /* Component styles */
-@layer components {
-  .hero-background {
-    @apply absolute inset-0 bg-cover bg-no-repeat;
-    background-image: var(--hero-bg);
-    background-position: center 20%;
-    background-size: cover;
-  }
+.hero-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-image: var(--hero-bg);
+  background-position: center 20%;
+  background-size: cover;
 }
+
+/* Base styles */
+* {
+  border-color: hsl(var(--border));
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: 'Poppins', sans-serif;
+}
 
-  body {
-    @apply bg-background text-foreground;
-    font-family: 'Poppins', sans-serif;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}
 }
 
 @layer utilities {
