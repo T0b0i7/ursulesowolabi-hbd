@@ -6,11 +6,11 @@ const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
         style={{ 
           backgroundImage: "var(--hero-bg)",
-          backgroundPosition: "center 30%",
+          backgroundPosition: "center 20%",
           backgroundSize: "cover"
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-rose-900/50 to-black/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-rose-900/40 to-black/80" />
       
       {/* Floating particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -21,7 +21,7 @@ const HeroSection = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 text-center px-4 space-y-8 animate-fade-in-up">
+      <div className="relative z-10 text-center px-4 space-y-8 animate-fade-in-up mt-[40vh]">
         <div className="space-y-4">
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight">
             <span className="block text-glow animate-pulse-glow bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
@@ -31,7 +31,7 @@ const HeroSection = () => {
               OWOLABI
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground font-light tracking-wide">
+          <p className="text-2xl md:text-3xl text-rose-200 font-light tracking-wider animate-fade-in opacity-90 mt-8">
             Une âme en rose et noir
           </p>
         </div>
